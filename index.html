@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPSC Exams | Powered by ExamRider</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #dbeafe, #e0f2f1);
+      color: #222;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 1.2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from {transform: translateY(-100%); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 1.2rem;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    .emoji {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #0d47a1;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e3f2fd;
+      color: #333;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🔷 RPSC Exam Zone - Powered by ExamRider
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <span class="emoji">🏛️</span>
+      <h3>RAS</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">👨‍🏫</span>
+      <h3>2nd Grade</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">🎓</span>
+      <h3>REET</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">👩‍👧‍👦</span>
+      <h3>4th Grade</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">📝</span>
+      <h3>Patwar</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">🏫</span>
+      <h3>College Lecturer</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">💻</span>
+      <h3>Computer Instructor</h3>
+    </div>
+    <div class="card">
+      <span class="emoji">📊</span>
+      <h3>Junior Accountant</h3>
+    </div>
+  </div>
+
+  <footer>
+    🔹 Powered by <strong>ExamRider</strong><br/>
+    © 2025 examrider.com | All rights reserved.
+  </footer>
+</body>
+</html>
