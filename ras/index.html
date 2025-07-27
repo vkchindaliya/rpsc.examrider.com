@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔥 RAS Exam Zone - ExamRider</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e3f2fd, #f3e5f5);
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #0d47a1;
+      margin-bottom: 30px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #2196f3; }
+      to { text-shadow: 0 0 20px #673ab7; }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: linear-gradient(145deg, #ffffff, #e0e0e0);
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      animation: fadeInUp 1s ease both;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .emoji {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 10px;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 RAS Exam Zone - Powered by ExamRider</h1>
 
+  <div class="grid">
+    <div class="card" onclick="location.href='syllabus.html'">
+      <span class="emoji">📚</span>
+      <a href="syllabus.html">Syllabus</a>
+    </div>
+    <div class="card" onclick="location.href='pre/index.html'">
+      <span class="emoji">📝</span>
+      <a href="pre/index.html">Pre Test Series</a>
+    </div>
+    <div class="card" onclick="location.href='mains/index.html'">
+      <span class="emoji">🧾</span>
+      <a href="mains/index.html">Mains Test Series</a>
+    </div>
+    <div class="card" onclick="location.href='other.html'">
+      <span class="emoji">📂</span>
+      <a href="other.html">Other Resources</a>
+    </div>
+  </div>
+
+  <footer>
+    🔗 <a href="../index.html">← Back to Home</a><br>
+    © 2025 ExamRider. All rights reserved.
+  </footer>
+</body>
+</html>
